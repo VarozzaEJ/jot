@@ -1,0 +1,14 @@
+/* BASIC STYLES HERE */
+
+.createNoteTextArea {
+    min-width: 38dvh;
+}
+
+.activeNoteTextArea {
+    min-height: 75dvh;
+    min-width: 60dvh;
+}
+
+.hidden {
+    display: none !important;
+}
