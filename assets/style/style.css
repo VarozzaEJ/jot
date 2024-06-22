@@ -1,30 +1,35 @@
 /* BASIC STYLES HERE */
 
 .createNoteTextArea {
-    min-width: 38dvh;
+  min-width: 38dvh;
 }
 
 .activeNoteTextArea {
-    min-height: 75dvh;
-    min-width: 70dvh;
+  min-height: 75dvh;
+  min-width: 70dvh;
 }
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 .main-bg-img {
-    background-image: url('https://api.deepai.org/job-view-file/e37d86e1-d225-46f5-a6a3-fc8b1acde717/outputs/output.jpg?art-image=true');
-    background-size: cover;
-    background-position: center;
-
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/004/600/163/large/jan-urschel-20170117.jpg?1484873964");
+  background-size: cover;
+  background-position: center;
 }
 
 .blur {
-    backdrop-filter: blur(3px);
-
+  backdrop-filter: blur(3px);
 }
 
 .text-shadow {
-    text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px black;
+}
+
+@media screen and (max-width: 676px) {
+  .small-screen-margin {
+    min-width: 48dvh;
+    margin-left: 0;
+  }
 }
