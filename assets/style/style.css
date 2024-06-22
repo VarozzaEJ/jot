@@ -6,9 +6,25 @@
 
 .activeNoteTextArea {
     min-height: 75dvh;
-    min-width: 60dvh;
+    min-width: 70dvh;
 }
 
 .hidden {
     display: none !important;
+}
+
+.main-bg-img {
+    background-image: url('https://api.deepai.org/job-view-file/e37d86e1-d225-46f5-a6a3-fc8b1acde717/outputs/output.jpg?art-image=true');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.blur {
+    backdrop-filter: blur(3px);
+
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 2px black;
 }
