@@ -31,5 +31,6 @@
   .small-screen-margin {
     min-width: 48dvh;
     margin-left: 0;
+    justify-content: center;
   }
 }

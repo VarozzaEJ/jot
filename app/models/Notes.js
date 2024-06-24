@@ -62,7 +62,7 @@ export class Note {
           <div class="col-md-4 col-12 mt-3">
           <div class="border border-dark rounded shadow bg-dark bg-gradient">
           <div class="d-flex align-items-center justify-content-center mb-2">
-            <h1 class="text-${this.color}">${this.name}</h1>
+            <h1 class="text-${this.color} ms-2">${this.name}</h1>
           </div class="shadow border border-dark">
           <h3 class="mb-3 mx-3 text-light fw-bold"><span class="d-flex text-${this.color}">Created On:</span> ${this.LongDate} </h3>
           <h3 class="mb-3 mx-3 text-light fw-bold"><span class="d-flex text-${this.color}">Last Updated On:</span> ${this.LongOpenedOnDate} </h3>

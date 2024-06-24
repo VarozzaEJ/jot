@@ -68,56 +68,57 @@
 
     <!-- SECTION -->
     <main class="main-bg-img img-fluid blur">
-      <div class="container-fluid"></div>
-      <div class="row">
-        <div id="activeNote" class="d-flex"></div>
-        <div class="col-4">
-          <div
-            class="offcanvas offcanvas-start"
-            tabindex="-1"
-            id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                Create A Note
-              </h5>
-              <button
-                type="button"
-                class="btn-close text-reset"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <div>To create a note, enter in a name with 3-15 characters.</div>
-              <form onsubmit="app.NotesController.createNote()">
-                <div>
-                  <textarea
-                    class="createNoteTextArea"
-                    required
-                    maxlength="15"
-                    minlength="3"
-                    name="name"
-                    id="name"
-                    placeholder="Create Name"
-                  ></textarea>
-                </div>
-                <div class="dropdown mt-3">
-                  <select class="form-select" id="color" name="color" required>
-                    <option selected disabled value="">Choose Color</option>
-                    <option value="danger">danger</option>
-                    <option value="primary">primary</option>
-                    <option value="warning">warning</option>
-                    <option value="info">info</option>
-                    <option value="success">success</option>
-                  </select>
-                </div>
-                <button class="btn btn-info mt-3" type="submit">
-                  Save Inputs
-                </button>
-              </form>
-            </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div id="activeNote" class="d-flex"></div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              Create A Note
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>To create a note, enter in a name with 3-15 characters.</div>
+            <form onsubmit="app.NotesController.createNote()">
+              <div>
+                <textarea
+                  class="createNoteTextArea"
+                  required
+                  maxlength="15"
+                  minlength="3"
+                  name="name"
+                  id="name"
+                  placeholder="Create Name"
+                ></textarea>
+              </div>
+              <div class="dropdown mt-3">
+                <select class="form-select" id="color" name="color" required>
+                  <option selected disabled value="">Choose Color</option>
+                  <option value="danger">danger</option>
+                  <option value="primary">primary</option>
+                  <option value="warning">warning</option>
+                  <option value="info">info</option>
+                  <option value="success">success</option>
+                </select>
+              </div>
+              <button class="btn btn-info mt-3" type="submit">
+                Save Inputs
+              </button>
+            </form>
           </div>
         </div>
       </div>
