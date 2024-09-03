@@ -46,7 +46,7 @@ class NotesService {
         const activeNote = AppState.activeNote
         activeNote.body = newDetails
         activeNote.lastUpdatedAt = new Date()
-        AppState.emit('activeNote') // emit will trigger listeners, registered to the same "action". Here we didn't change 'activeCaseFile' directly so the listeners don't trigger, so we have to trigger them manually to draw
+        AppState.emit('activeNote')
         this.saveNotes()
     }
 
