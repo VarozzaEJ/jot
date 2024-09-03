@@ -59,7 +59,7 @@ export class Note {
   get activeNoteTemplate() {
     return /*html*/ `
         <div class=" d-md-flex mx-4">
-          <div class="col-md-4 col-12 mt-3">
+          <div class="col-md-4 me-md-3 col-12 mt-3">
           <div class="border border-dark rounded shadow bg-dark bg-gradient">
           <div class="d-flex align-items-center justify-content-center mb-2">
             <h1 class="text-${this.color} ms-2">${this.name}</h1>
@@ -74,16 +74,19 @@ export class Note {
           </div>
 
         </div>
-        <div class="col-md-8 col-12 ms-5 small-screen-margin d-flex bg-${this.color} justify-content-center flex-column mt-3 text-center">
-        <form class="activeNoteBody" onsubmit="app.NotesController.saveActiveNote()">
-          <textarea name="activeNoteBody" id="activeNoteBody"
-            class="activeNoteTextArea mt-5">${this.body}</textarea>
+        <div class="row w-md-100 mb-3">
+        
+          <div class="col-md-12 col-12  ms-md-3 small-screen-margin d-flex bg-${this.color} justify-content-center flex-column mt-3 text-center">
+            <form class="activeNoteBody my-2" onsubmit="app.NotesController.saveActiveNote()">
+              <textarea name="activeNoteBody" id="activeNoteBody"
+              class="activeNoteTextArea mt-md-5">${this.body}</textarea>
           <div class="row">
-                    <div class="col-12 d-flex justify-content-end mt-3">
-                    <button type="submit" class="btn btn-dark rounded-pill fs-5 me-3 mb-3"><i class="mdi mdi-content-save"></i></button>
-                    </div>
-                </div>
-            </form>
+            <div class="col-12 d-flex justify-content-end mt-3">
+                <button type="submit" class="btn btn-dark rounded-pill fs-5 me-3 mb-3"><i class="mdi mdi-content-save"></i></button>
+            </div>
+          </div>
+        </form>
+        </div>
         </div>
         </div>
         `;

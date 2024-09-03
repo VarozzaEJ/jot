@@ -4,9 +4,12 @@
   min-width: 38dvh;
 }
 
-.activeNoteTextArea {
-  min-height: 75dvh;
-  min-width: 70dvh;
+
+@media screen and (min-width: 676px) {
+  .activeNoteTextArea {
+    min-height: 75dvh;
+    min-width: 70dvh;
+  }
 }
 
 .hidden {
@@ -28,9 +31,8 @@
 }
 
 @media screen and (max-width: 676px) {
-  .small-screen-margin {
-    min-width: 48dvh;
-    margin-left: 0;
-    justify-content: center;
+  .activeNoteTextArea {
+    min-width: 37dvh;
+    min-height: 50dvh
   }
 }
